@@ -12,4 +12,4 @@ confluence:
 database:
   image: postgres:9.4
   volumes:
-    - setup-confluence-db.sh:/docker-entrypoint-initdb.d/setup-confluence-db.sh
+    - ./setup-confluence-db.sh:/docker-entrypoint-initdb.d/setup-confluence-db.sh

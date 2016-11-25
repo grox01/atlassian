@@ -11,4 +11,4 @@ database:
   restart: always
   volumes:
     - data:/var/lib/postgresql/data
-    - setup-confluence-db.sh:/docker-entrypoint-initdb.d/setup-confluence-db.sh
+    - ./setup-confluence-db.sh:/docker-entrypoint-initdb.d/setup-confluence-db.sh
