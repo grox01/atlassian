@@ -11,7 +11,7 @@ nginx:
     - crowd
     - bamboo
   volumes:
-    - nginx.conf:/etc/nginx/nginx.conf
+    - ./nginx.conf:/etc/nginx/nginx.conf
 
 stash:
   image: mhubig/atlassian-stash
